@@ -1,3 +1,5 @@
+import os
+import discord
 from discord.ext import commands
 import interactions
 from interactions import Client
@@ -6,8 +8,8 @@ from openai import OpenAI
 client = OpenAI()
 
 # 设置你的 Discord bot 的 token 和 OpenAI API 密钥
-TOKEN = ''
-OPENAI_API_KEY = ''
+TOKEN = '12345'
+OPENAI_API_KEY = '12345'
 
 # 创建 bot 实例时传递 intents 参数
 intents = interactions.Intents.DEFAULT | interactions.Intents.MESSAGE_CONTENT
